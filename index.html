@@ -740,7 +740,7 @@
 
     <script type="text/javascript">
 
-          function showToast(message) {
+    function showToast(message) {
     const toast = document.getElementById('toast-container');
     toast.textContent = message;
     toast.style.display = 'block';
@@ -797,6 +797,8 @@
     setTimeout(() => {
       loginBtn.disabled = false;
       loginBtn.innerHTML = 'Log in';
+      username.value = '';
+      password.value = '';
 
       // Show toast message
       showToast('Wrong Email or Password!');
